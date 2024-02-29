@@ -16,10 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
     
-      uses: docker/build-action@v2
-      with:
-        context: .
-        file: Dockerfile
+     
     
   
        
