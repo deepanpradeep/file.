@@ -18,6 +18,5 @@ jobs:
       working-directory: . /app
       run: |
         docker build . --file Dockerfile --tag image-name
-        docker build . --file /app/dockerfile --tag image-name /.app/build/context
        
 
