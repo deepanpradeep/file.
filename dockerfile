@@ -1,2 +1,4 @@
-run apt-get -y update
-run apt-get -y install nignix
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y nginx
+CMD ["nginx", "-g", "daemon off;"]
+
