@@ -20,10 +20,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t niginx:latest . 
+        run: docker build -t httpd:latest . 
 
       - name: Push Docker image
-        run: docker push niginx:latest 
+        run: docker push httpd:latest 
 
 
   
